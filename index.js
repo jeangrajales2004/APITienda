@@ -9,9 +9,8 @@ app.use(exp.json());
 
 app.use('/v1',enrutamiento)
 
+app.set("view engine","ejs")
 
 app.listen(process.env.PORT,()=>{
     console.log("Servidor ejecutandose en " +process.env.PORT);
 })
-
-
